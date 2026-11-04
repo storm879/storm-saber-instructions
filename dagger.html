@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="js"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="NEON DAGGER cyberpunk tactical knife user manual (XENO3.0): packing, safety, button operation, SD sound fonts, app, charging, troubleshooting and warranty. English and Chinese.">
+<meta name="theme-color" content="#08080a">
+<meta name="color-scheme" content="dark">
+<title>NEON DAGGER User Manual | XENO3.0</title>
+<style>
+/* ================= base ================= */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;color-scheme:dark}
+body{
+  margin:0 auto;padding:16px;max-width:720px;
+  background:#08080a;color:#e2e2e2;
+  font-family:Arial,Helvetica,"Segoe UI","Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;
+  font-size:16px;line-height:1.6;
+}
+h1,h2,h3,p,ul{margin:0}
+ul{padding-left:22px;margin:8px 0}
+li{margin:6px 0}
+a{color:#ff707a}
+/* ================= header ================= */
+header{text-align:center;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #a81020}
+.logo-title{color:#ff2a3c;font-size:26px;font-weight:bold;margin-bottom:4px;letter-spacing:.02em}
+.subtitle{color:#aaa;font-size:15px}
+.lang-bar{display:flex;justify-content:center;gap:12px;margin:16px 0 0}
+.lang-btn{
+  border:1px solid #ff2a3c;background:transparent;color:#ff2a3c;font-family:inherit;
+  padding:10px 18px;min-height:44px;border-radius:4px;cursor:pointer;font-size:15px;
+}
+.lang-btn.active{background:#ff2a3c;color:#000}
+.lang-btn:hover,.lang-btn:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.noscript-hint{color:#f4606c;font-size:14px;margin-top:12px}
+/* ================= table of contents ================= */
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.toc a{
+  color:#ff707a;font-size:14px;text-decoration:none;border:1px solid rgba(255,42,60,.45);
+  padding:8px 12px;border-radius:4px;min-height:40px;display:inline-flex;align-items:center;
+}
+.toc a:hover,.toc a:focus-visible{background:rgba(255,42,60,.15);outline:none}
+/* ================= sections ================= */
+.section{margin:28px 0;scroll-margin-top:12px}
+h2{color:#ff2a3c;font-size:19px;margin:0 0 10px}
+h3{color:#f4606c;font-size:16px;margin:14px 0 6px}
+.warn{border:1px solid #ff2a3c;padding:12px;border-radius:6px;background:rgba(255,42,60,.08);margin:12px 0}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:15px}
+.spec th,.spec td{border:1px solid #2a2a30;padding:7px 10px;text-align:left;vertical-align:top}
+.spec th{background:#141417;color:#ff2a3c;font-weight:bold;width:36%}
+.spec td{color:#e2e2e2}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid #222;color:#9a9a9a;font-size:12px;text-align:center}
+.yt-slot{margin-top:10px;font-size:13px;color:#9a9a9a}
+.yt-slot a{color:#ff707a;text-decoration:none;border-bottom:1px dashed rgba(255,112,122,.5)}
+.yt-slot a:hover{border-bottom-style:solid}
+/* ================= language switching (progressive enhancement) ================= */
+html.js .lang-block:not(.is-current){display:none}
+html.js .block-title{display:none}
+.block-title{color:#aaa;font-size:13px;text-align:center;letter-spacing:.12em;margin:0 0 8px}
+/* ================= small screens ================= */
+@media (max-width:480px){
+  body{padding:12px;font-size:15px}
+  .logo-title{font-size:22px}
+  .toc a{font-size:13px;padding:7px 10px}
+}
+/* ================= print ================= */
+@media print{
+  html{color-scheme:light}
+  body{background:#fff;color:#111;max-width:none;padding:0;font-size:11pt;line-height:1.5}
+  header{border-bottom:1px solid #8a0d1a;margin-bottom:16px}
+  .logo-title{color:#8a0d1a}
+  h2{color:#8a0d1a}
+  h3{color:#5c0a12}
+  .subtitle,.footer,.block-title{color:#333}
+  .lang-bar,.noscript-hint{display:none!important}
+  .toc a{color:#111;border:1px solid #999}
+  .warn{background:#fff;border:1px solid #8a0d1a}
+  .warn strong{color:#8a0d1a}
+  .spec th,.spec td{border:1px solid #999;color:#111;padding:6px 9px}
+  .spec th{background:#f2f2f2;color:#8a0d1a}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3{break-after:avoid-page}
+  .warn,li,.footer{break-inside:avoid}
+  .yt-slot{color:#444}
+  .yt-slot a{color:#8a0d1a;border-bottom:1px solid}
+  p{orphans:3;widows:3}
+  @page{margin:16mm}
+}
+</style>
+<script>document.documentElement.className = "js";</script>
+</head>
+<body class="">
+
+<!-- ===== 编辑工具栏：仅本地编辑时显示，打印与「发布版」里会自动去掉 ===== -->
+<header>
+  <h1 class="logo-title">NEON DAGGER</h1>
+  <p class="subtitle">Cyberpunk Tactical Knife User Manual · XENO3.0</p>
+  <nav class="lang-bar" aria-label="Language / 语言">
+    <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" lang="en">English</button>
+    <button type="button" class="lang-btn active" data-lang="zh" aria-pressed="true" lang="zh-CN">中文</button>
+  </nav>
+  <noscript>
+    <p class="noscript-hint">Language switching requires JavaScript. The English and Chinese manuals are both shown below.</p>
+  </noscript>
+</header>
+
+<!-- ============================================================
+     ENGLISH
+     ============================================================ -->
+<div class="lang-block" id="content-en" data-lang-block="en"="" lang="en">
+
+  <nav class="toc" aria-label="Contents">
+    <a href="#en-pack">Packing &amp; Safety</a>
+    <a href="#en-spec">Specifications</a>
+    <a href="#en-button">Button Operation</a>
+    <a href="#en-sd">SD Card &amp; Sound Fonts</a>
+    <a href="#en-app">App</a>
+    <a href="#en-charge">Charging &amp; Care</a>
+    <a href="#en-trouble">Troubleshooting</a>
+    <a href="#en-warranty">Warranty</a>
+  </nav>
+
+  <section class="section" id="en-pack">
+    <h2><span aria-hidden="true">📦</span> Packing List</h2>
+    <ul>
+      <li>NEON DAGGER knife (aluminum-CNC handle, 3D-printed blade)</li>
+      <li>Sheath + accessories</li>
+      <li>Magnetic charging cable + charger</li>
+      <li>SD card preinstalled</li>
+      <li>Bonus: cyberpunk decorative decals</li>
+    </ul>
+
+    <h2><span aria-hidden="true">⚠️</span> Safety Warnings</h2>
+    <div class="warn">
+      <ul>
+        <li>This is a collectible prop, <strong>not a toy</strong>. Children under 14 must not use it on their own; all minors must be supervised by an adult at all times.</li>
+        <li>Contains a built-in lithium-ion (Li-ion) battery. Never disassemble it, puncture the cells, submerge the dagger or place it near a heat source.</li>
+        <li>Charge only from a standard 5 V charger (1–2 A). Fast charging can burn out the circuit.</li>
+        <li>The 3D-printed blade is a custom collectible prop, not a combat knife. Never strike it violently; misuse damage is not covered by the warranty.</li>
+        <li>For long storage: charge fully, then put it into deep sleep mode. Recharge every 2–3 months so the battery does not over-discharge and lock up.</li>
+        <li>Do not look directly into the LEDs, and never point the blade tip at anyone’s eyes.</li>
+        <li>Keep clear of people, glass and fragile objects. Never strike faces or heads.</li>
+        <li>Do not block the ventilation holes, and avoid damp storage to prevent oxidation and short circuits on the mainboard.</li>
+        <li>Heat near the emitter is normal — the handle helps dissipate it. Never use the dagger without the handle fitted.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="en-spec">
+    <h2><span aria-hidden="true">📋</span> Specifications</h2>
+    <table class="spec">
+      <tbody>
+        <tr><th scope="row">Model</th><td>NEON DAGGER</td></tr>
+        <tr><th scope="row">Mainboard</th><td>Damien XENO3.0 pixel mainboard (80+ sound fonts built in)</td></tr>
+        <tr><th scope="row">Blade</th><td>3D-printed blade · 26 pixels</td></tr>
+        <tr><th scope="row">Handle / shell</th><td>Aluminum CNC, anodized; light-cured resin exoskeleton (metal-color skin-friendly coating + titanium ceramic coating)</td></tr>
+        <tr><th scope="row">Blade length / weight</th><td>32.5 cm · 276 g (knife) / 517 g (with sheath)</td></tr>
+        <tr><th scope="row">Battery</th><td>14450 Li-ion, 1200 mAh</td></tr>
+        <tr><th scope="row">Runtime</th><td>~2 hours (at max brightness)</td></tr>
+        <tr><th scope="row">Charging</th><td>Magnetic contact charging, approx. 2 hours</td></tr>
+        <tr><th scope="row">Sound storage</th><td>microSD, FAT32, 4 GB included, max. 32 GB</td></tr>
+        <tr><th scope="row">Audio format</th><td>WAV, 16-bit, 44.1 kHz, mono</td></tr>
+        <tr><th scope="row">App</th><td>Xeno Configurator (search “saber”)</td></tr>
+        <tr><th scope="row">Warranty</th><td>12 months (mainboard)</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section" id="en-button">
+    <h2><span aria-hidden="true">🎮</span> Button Operation</h2>
+    <p><strong>Click</strong> = short press and release. <strong>Hold</strong> = press and keep holding. Hold actions are confirmed by the <strong>number of button-LED flashes</strong>; powering on and off is indicated by a sound prompt.</p>
+
+    <h3>States and LED indicator</h3>
+    <ul>
+      <li>Off (deep sleep): button LED off — hold for 3 s to power on (plays the “power on” tone)</li>
+      <li>Standby: button LED on, blade off — click to ignite</li>
+      <li>Ignited: button LED on, blade lit — hold for 1.5 s to retract (LED flashes 3×)</li>
+    </ul>
+
+    <h3>Standby mode</h3>
+    <ul>
+      <li>Click: ignite the blade</li>
+      <li>Hold 0.5 s (LED flashes 1×): adjust the volume</li>
+      <li>Hold 1 s (LED flashes 2×): switch the background light effect</li>
+      <li>Hold 1.5 s (LED flashes 3×): switch the light-effect mode</li>
+      <li>Hold 2 s (LED flashes 4×): switch to the previous sound font</li>
+      <li>Rotate the blade tip downward (counter-clockwise): switch to the next sound font</li>
+      <li>Rotate the blade tip upward: play background music</li>
+    </ul>
+
+    <h3>Ignited mode (blade on)</h3>
+    <ul>
+      <li>Strike: clash effect</li>
+      <li>Click: blaster-block effect</li>
+      <li>Hold 1 s (LED flashes 2×): continuous color sweep</li>
+      <li>Point the blade down, hold the button and rotate: strobing color cycling / rotating color cycling</li>
+      <li>Click during color selection: confirm the current color</li>
+      <li>Hold the button and strike: blade lock-up</li>
+      <li>Touch the blade tip to the ground: drag effect</li>
+      <li>Touch the blade tip to a wall: melt effect</li>
+      <li>Point the blade up, hold the button and rotate: Force effect / Force-lightning block</li>
+      <li>Thrust forward: stab effect</li>
+      <li>Hold 1.5 s (LED flashes 3×): retract the blade</li>
+      <li>Hold 0.5 s (LED flashes 1×): enter / exit battle mode</li>
+      <li>Hold the button and swing: enter / exit continuous block mode</li>
+    </ul>
+
+    <h3>Features that must be enabled in the app</h3>
+    <ul>
+      <li>Battle mode</li>
+      <li>Continuous block mode</li>
+      <li>Force-lightning block</li>
+    </ul>
+
+    <p>Note: motion sensitivity is adjustable in Xeno Configurator. Lower sensitivity is recommended for dueling to avoid false triggers.</p>
+  </section>
+
+  <section class="section" id="en-sd">
+    <h2><span aria-hidden="true">💾</span> SD Card &amp; Sound Font Guide</h2>
+
+    <h3>Sound font folder rules</h3>
+    <ul>
+      <li>Each sound font goes in its own folder.</li>
+      <li>Folder names may contain only A–Z, 0–9 and underscores — no Chinese characters, spaces or special symbols.</li>
+      <li>Required audio files: boot.wav, hum.wav, clash.wav, swing.wav, stab.wav, blaster.wav, lockup.wav, poweron.wav, poweroff.wav.</li>
+      <li>Audio format: WAV, 16-bit, 44.1 kHz, mono.</li>
+    </ul>
+
+    <h3>SD card steps</h3>
+    <ul>
+      <li>Format the card as FAT32 with 4096-byte allocation units.</li>
+      <li>Put the font folders in the root directory — nested folders are not supported.</li>
+      <li>Do not modify the system files on the card; only add sound font folders.</li>
+      <li>Eject the card safely, reinsert it, then hold for 2 s in standby mode to switch the sound font.</li>
+      <li>Recommended capacity: 4–16 GB; 32 GB is the largest stable size.</li>
+    </ul>
+
+  </section>
+
+  <section class="section" id="en-app">
+    <h2><span aria-hidden="true">📱</span> App</h2>
+    <p>The app is used to connect to the dagger, set colors, manage sound fonts and background music, and update the firmware.</p>
+
+    <h3>Download and connect</h3>
+    <ul>
+      <li>Install <strong>Xeno Configurator</strong> from your phone’s app store (in China the app is called <strong>XENO SABER APP</strong>).</li>
+      <li>Power the dagger on (standby), then enable Bluetooth on your phone.</li>
+      <li>In the app, tap the blue arrow to search for the dagger, then confirm the prompt.</li>
+      <li>When the connection succeeds, the app shows a notice and the blade plays a confirmation sound.</li>
+      <li>If it will not connect, check the phone’s Bluetooth and Location permissions, move closer to the dagger and try again.</li>
+      <li>One app can recognize and manage several units.</li>
+    </ul>
+
+    <h3>Main screen</h3>
+    <ul>
+      <li>Dagger name / ID and an <strong>estimated battery level</strong> (it fluctuates; for reference only)</li>
+      <li>Base light-effect buttons: tap to switch</li>
+      <li>Three ways to select a color</li>
+      <li><strong>Kyber crystal</strong>: tap to ignite or turn off; while the crystal is off, the dagger stays in standby</li>
+      <li>Detailed light-effect settings (gradient, flicker, etc.)</li>
+      <li>Background music switch</li>
+      <li>Sound font (FONT) selection</li>
+      <li>Volume: 0–100, continuous adjustment</li>
+      <li>Bottom tabs: Home · Settings · Custom · My Dagger</li>
+    </ul>
+
+    <h3>Firmware and permissions</h3>
+    <ul>
+      <li>Firmware updates are performed in the app. Keep the connection alive and do not cut the power during an update.</li>
+      <li>Bluetooth permission is required; on Android, Location permission is also needed to scan for Bluetooth devices. Storage permission is used to import / export profiles, and network permission is used for updates.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="en-charge">
+    <h2><span aria-hidden="true">🔋</span> Charging &amp; Contact Care</h2>
+
+    <h3>Charging</h3>
+    <ul>
+      <li>Red LED = charging; green LED = fully charged.</li>
+      <li>A full charge takes about 2 hours. Unplug once fully charged; do not leave the dagger on overnight trickle charge.</li>
+      <li>The battery is built-in and not user-replaceable. If it swells or loses capacity, contact support.</li>
+      <li>After a deep discharge or a long period in storage, the battery may enter sleep mode: charge for at least 10 minutes to wake it. If it still does not charge, contact support.</li>
+      <li>The estimated battery level is shown on the app’s main screen (for reference only).</li>
+    </ul>
+
+    <h3>Magnetic charging contact care</h3>
+    <ul>
+      <li>The magnetic charging contacts carry power; dust and oxidation cause slow charging or no charge.</li>
+      <li>Clean them with a lint-free swab and anhydrous alcohol, and let them dry completely before charging.</li>
+    </ul>
+
+    <h3>Carrying and storage</h3>
+    <ul>
+      <li>Switch the dagger off before sheathing it.</li>
+      <li>Always carry it in the sheath; store it in a dry place away from direct light.</li>
+      <li>The 3D-printed blade is scratch-sensitive — avoid contact with hard surfaces.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="en-trouble">
+    <h2><span aria-hidden="true">🔧</span> Troubleshooting</h2>
+    <ul>
+      <li><strong>Will not power on after charging:</strong> the battery may be in sleep mode after a deep discharge or long storage — charge for at least 10 minutes to wake it. If it still does not respond, contact support.</li>
+      <li><strong>No swing, hum or clash sounds:</strong> charge the battery fully first, then check that the sound files are on the SD card and that the card is seated properly.</li>
+      <li><strong>The dagger suddenly stops working:</strong> low battery, or the SD card is loose or its files are corrupted — charge fully and reinsert the card.</li>
+      <li><strong>The area around the emitter gets very hot:</strong> this is normal during use; always use the dagger with the handle fitted so it can dissipate heat — never use it without the handle.</li>
+      <li><strong>The blade is dark or flickers:</strong> charge fully first; clean the magnetic charging contacts; if it persists, contact support.</li>
+      <li><strong>The charging indicator does not light up:</strong> check the magnetic connection and try another charging cable.</li>
+      <li><strong>A newly added sound font does not appear:</strong> check the folder name, FAT32 formatting, nested folders and the audio specification.</li>
+      <li><strong>Motion triggers too easily or not at all:</strong> adjust the sensitivity in the app.</li>
+      <li><strong>A continuous warning tone at power-on:</strong> the SD card files are corrupted — format the card and restore the factory firmware pack.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="en-warranty">
+    <h2><span aria-hidden="true">📜</span> Care &amp; Warranty</h2>
+
+    <h3>Care tips</h3>
+    <ul>
+      <li>Wipe the handle with a soft, slightly damp cloth; do not use sandpaper or corrosive cleaners.</li>
+      <li>Do not spray WD-40 or large amounts of alcohol inside the handle — it corrodes the circuit board.</li>
+      <li>For long-term storage: clean the contacts, charge fully, enter deep sleep and keep the dagger in a dry place away from direct light.</li>
+      <li>Opening the handle yourself voids the warranty immediately.</li>
+    </ul>
+
+    <h3>Warranty terms</h3>
+    <ul>
+      <li>12-month mainboard warranty from the date of delivery.</li>
+      <li>Covered: factory soldering defects and original hardware faults on the mainboard.</li>
+      <li>Not covered: blade wear (consumable), drop damage, water damage, unauthorized teardown, damage from hot-plugging the blade, and battery damage from fast charging.</li>
+      <li>After-sales process: contact support with a video of the fault; once assessed, return the dagger to the workshop for repair.</li>
+    </ul>
+
+    <h3>After-sales &amp; returns</h3>
+    <p>For after-sales service and returns, please refer to the purchase page.</p>
+  </section>
+</div>
+
+<!-- ============================================================
+     中文
+     ============================================================ -->
+<div class="lang-block is-current" id="content-zh" data-lang-block="zh"="" lang="zh-CN">
+  <p class="block-title">中文手册</p>
+
+  <nav class="toc" aria-label="目录">
+    <a href="#zh-pack">装箱与安全</a>
+    <a href="#zh-spec">规格参数</a>
+    <a href="#zh-button">按键操作</a>
+    <a href="#zh-sd">SD 卡与音效包</a>
+    <a href="#zh-app">手机 App</a>
+    <a href="#zh-charge">维护与配件</a>
+    <a href="#zh-trouble">故障排查</a>
+    <a href="#zh-warranty">质保</a>
+  </nav>
+
+  <section class="section" id="zh-pack">
+    <h2><span aria-hidden="true">📦</span> 装箱清单</h2>
+    <ul>
+      <li>NEON DAGGER 匕首本体（铝合金 CNC 刀柄 + 3d打印刀刃）</li>
+      <li>刀鞘+配件</li>
+      <li>磁吸充电线+充电头</li>
+      <li>&nbsp;SD 卡已内置</li>
+      <li>附赠：赛博朋克风格装饰贴</li>
+    </ul>
+
+    <h2><span aria-hidden="true">⚠️</span> 安全须知</h2>
+    <div class="warn">
+      <ul>
+        <li>本品为影视收藏把玩道具，<strong>不是玩具</strong>，14 岁以下禁止单独使用，未成年人必须由成人全程陪同。</li>
+        <li>内置锂聚合物电池，严禁拆解、刺破电芯、入水浸泡或放置于高温热源旁。</li>
+        <li>充电仅使用 5 V 标准充电头（1–2 A），快充会烧毁电路。</li>
+        <li>3d打印刀刃为定制收藏道具，不是实战刀具，严禁暴力击打；人为损坏不在质保范围。</li>
+        <li>长期存放：充满电后进入深度休眠，每 2–3 个月补电，防止电池亏电锁死。</li>
+        <li>不要直视 LED 灯珠，严禁将刀尖对准他人眼睛。</li>
+        <li>挥砍避开人群、玻璃等易碎品，禁止击打面部和头部。</li>
+        <li>不要堵住散热孔，避免潮湿环境存放，防止主板氧化短路。</li>
+        <li>发射器附近发热属正常现象，刀柄会帮助散热；切勿在未装刀柄的情况下使用。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="zh-spec">
+    <h2><span aria-hidden="true">📋</span> 规格参数</h2>
+    <table class="spec">
+      <tbody>
+        <tr><th scope="row">型号</th><td>NEON DAGGER</td></tr>
+        <tr><th scope="row">主控板</th><td>达米恩 XENO3.0 像素主板（内置 80+ 音效包）</td></tr>
+        <tr><th scope="row">刀刃</th><td>3d打印刀刃 · 26 像素</td></tr>
+        <tr><th scope="row">刀柄 / 外壳</th><td>铝合金 CNC，阳极氧化；光固化树脂外骨骼（金属色亲肤涂层 + 钛色陶瓷涂层）</td></tr>
+        <tr><th scope="row">刀长 / 重量</th><td>32.5 cm · 276 g（本体）/ 517 g（带鞘）</td></tr>
+        <tr><th scope="row">电池</th><td>14450 锂电池，1200 mAh</td></tr>
+        <tr><th scope="row">续航</th><td>最大功率约 2 小时</td></tr>
+        <tr><th scope="row">充电</th><td>磁吸触点充电，约 2 小时</td></tr>
+        <tr><th scope="row">音效存储</th><td>microSD，FAT32，默认出厂 4 GB，最大支持 32 GB</td></tr>
+        <tr><th scope="row">音频格式</th><td>WAV，16 bit，44.1 kHz，单声道</td></tr>
+        <tr><th scope="row">App</th><td>Xeno Configurator（搜索 “saber”）</td></tr>
+        <tr><th scope="row">质保</th><td>主板 12 个月</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section" id="zh-button">
+    <h2><span aria-hidden="true">🎮</span> 按键操作说明</h2>
+    <p><strong>Click</strong> = 短按松开；<strong>Hold</strong> = 长按不放。长按操作以<strong>按钮 LED 闪烁次数</strong>确认；开关机为提示音。</p>
+
+    <h3>状态与指示灯</h3>
+    <ul>
+      <li>关机（深度休眠）：按钮灯灭 —— 长按 3 秒开机，有 power on 提示音</li>
+      <li>待机：按钮灯亮、刀刃熄灭 —— 单击点亮</li>
+      <li>点亮：按钮灯亮、刀刃发光 —— 长按 1.5 秒关闭（LED 闪 3 次）</li>
+    </ul>
+
+    <h3>待机状态</h3>
+    <ul>
+      <li>单击按钮：点亮刀刃</li>
+      <li>长按 0.5 秒（LED 闪 1 次）：音量调节</li>
+      <li>长按 1 秒（LED 闪 2 次）：切换背景光效</li>
+      <li>长按 1.5 秒（LED 闪 3 次）：切换光效模式</li>
+      <li>长按 2 秒（LED 闪 4 次）：切换上一套音效包</li>
+      <li>刀刃向下逆时针旋转：切换下一套音效包</li>
+      <li>刀刃向上旋转：背景音乐</li>
+    </ul>
+
+    <h3>点亮状态（刀刃发光）</h3>
+    <ul>
+      <li>敲击：敲击效果</li>
+      <li>单击按钮：格挡爆能枪效果（打枪效果）</li>
+      <li>长按 1 秒（LED 闪 2 次）：无极变色</li>
+      <li>刀刃向下 + 按住按钮 + 旋转：跳动变色 / 旋转变色</li>
+      <li>变色过程中单击按钮：选中当前颜色</li>
+      <li>按住按钮 + 敲击：拼剑效果</li>
+      <li>刀尖向下戳地面：拖曳效果</li>
+      <li>刀尖戳墙：融化效果</li>
+      <li>刀刃向上 + 按住按钮 + 旋转：原力效果 / 原力闪电格挡</li>
+      <li>往前戳：刺效果</li>
+      <li>长按 1.5 秒（LED 闪 3 次）：收刃</li>
+      <li>长按 0.5 秒（LED 闪 1 次）：进入 / 退出战斗模式</li>
+      <li>按住按钮 + 挥舞：进入 / 退出连续格挡模式</li>
+    </ul>
+
+    <h3>需在 App 内开启的功能</h3>
+    <ul>
+      <li>战斗模式</li>
+      <li>连续格挡模式</li>
+      <li>原力闪电格挡</li>
+    </ul>
+
+    <p>备注：体感灵敏度在 App 内可调；对打玩家建议调低灵敏度，防止误触发。</p>
+  </section>
+
+  <section class="section" id="zh-sd">
+    <h2><span aria-hidden="true">💾</span> SD 卡与音效包 Font 教程</h2>
+
+    <h3>音效包文件夹规范</h3>
+    <ul>
+      <li>每个音效包使用独立文件夹。</li>
+      <li>文件夹命名只允许 A–Z、0–9 和下划线；禁止中文、空格和特殊符号。</li>
+      <li>必需音频文件：boot.wav, hum.wav, clash.wav, swing.wav, stab.wav, blaster.wav, lockup.wav, poweron.wav, poweroff.wav。</li>
+      <li>音频规格：WAV，16 bit，44100 Hz，单声道。</li></ul><ul>
+    </ul>
+
+  </section>
+
+  <section class="section" id="zh-app">
+    <h2><span aria-hidden="true">📱</span> 手机 App</h2>
+    <p>App 用于连接匕首、调色、音效包、背景音乐与固件升级。</p>
+
+    <h3>下载与连接</h3>
+    <ul>
+      <li>在手机应用市场搜索 “saber”，下载 <strong>XENO SABER APP</strong>（海外版名为 Xeno Configurator）</li>
+      <li>先开机（待机状态），再打开手机蓝牙</li>
+      <li>在 App 中点击蓝色箭头搜索匕首，弹出确认框后点确定</li>
+      <li>连接成功时 App 会弹出提示，刀刃也会发出提示音</li>
+      <li>连不上时：检查手机蓝牙与定位权限，靠近匕首再试</li>
+      <li>一个 App 可识别并管理多台设备</li>
+    </ul>
+
+    <h3>主界面</h3>
+    <ul>
+      <li>匕首名称 / 编号，以及<strong>预估电量</strong>（有浮动，仅供参考）</li>
+      <li>基础光效按钮：点击即切换</li>
+      <li>三种选色方式</li>
+      <li><strong>凯博水晶</strong>：点击点亮 / 熄灭；水晶熄灭时处于待机</li>
+      <li>光效具体配置（渐变、闪烁等）</li>
+      <li>背景音乐开关</li>
+      <li>音效包（FONT）选择</li>
+      <li>音量 0–100 无极调节</li>
+      <li>底部页签：主屏幕 · 设置 · 自定义 · 我的匕首</li>
+    </ul>
+
+    <h3>固件与权限</h3>
+    <ul>
+      <li>固件升级在 App 内完成：升级时保持连接，不要断电</li>
+      <li>需要蓝牙权限；Android 扫描蓝牙设备还需要定位权限；存储权限用于导入 / 导出配置；网络权限用于更新</li>
+    </ul>
+  </section>
+
+  <section class="section" id="zh-charge">
+    <h2><span aria-hidden="true">🔋</span> 充电、触点维护、选配配件</h2>
+
+    <h3>充电说明</h3>
+    <ul>
+      <li>红灯 = 充电中；绿灯 = 充满。</li>
+      <li>充满约 2 小时。充满后建议拔线，不要长期浮充过夜。</li>
+      <li>电池为内置设计，用户不可自行更换；电池鼓包 / 衰减请联系客服。</li>
+      <li>电量耗尽或长期存放后，电池可能进入休眠：先充电 10 分钟以上唤醒；仍充不进电时请联系客服。</li>
+      <li>剩余电量可在 App 主界面查看（预估值，仅供参考）。</li>
+    </ul>
+
+    <h3>磁吸充电触点维护</h3>
+    <ul>
+      <li>磁吸充电触点是导电核心，灰尘氧化会造成充电慢或充不进。</li>
+      <li>清理：无尘棉签 + 无水酒精擦拭，完全晾干再充电。</li>
+    </ul>
+
+    <h3>携带与收纳</h3>
+    <ul>
+      <li>入鞘前先关闭电源。</li>
+      <li>日常携带请装入刀鞘，存放于干燥避光处。</li>
+    </ul>
+  </section>
+
+  <section class="section" id="zh-trouble">
+    <h2><span aria-hidden="true">🔧</span> 故障排查</h2>
+    <ul>
+      <li><strong>充电后无法开机：</strong>电量耗尽或长期存放后电池可能进入休眠，先充电 10 分钟以上唤醒；仍无反应时请联系客服。</li>
+      <li><strong>没有挥剑声、嗡鸣声或碰撞声：</strong>先把电充满，再检查音效文件是否在 SD 卡上、</li>
+      <li><strong>匕首突然停止工作：</strong>电量不足，或 SD 卡松动 / 文件损坏&nbsp;</li>
+      <li><strong>刀刃不亮或闪烁：</strong>先充满电，再清洁磁吸充电触点；仍异常请联系客服。</li>
+      <li><strong>充电指示灯不亮：</strong>检查磁吸触点是否贴合，或更换充电头</li>
+      <li><strong>找不到新导入的音效包：</strong>检查文件夹命名、FAT32 格式、是否有嵌套、音频规格是否正确。</li>
+      <li><strong>感应过度灵敏或没反应：</strong>在 App 内调整灵敏度；</li>
+      <li><strong>开机持续警报音：</strong>SD 卡文件损坏 —— 格式化 SD 卡，重装出厂固件包。</li>
+    </ul>
+  </section>
+
+  <section class="section" id="zh-warranty">
+    <h2><span aria-hidden="true">📜</span> 保养与质保条款</h2>
+
+    <h3>保养提示</h3>
+    <ul>
+      <li>柄体脏污用微湿软布擦拭，禁止砂纸、腐蚀性清洁剂。</li>
+      <li>不要向柄内部喷 WD-40 或大量酒精，会腐蚀电路板。</li>
+      <li>长期收纳：清洁触点、充满电、深度休眠，存放于干燥避光处。</li>
+      <li>私自拆开刀柄直接失去质保。</li>
+    </ul>
+
+    <h3>质保说明</h3>
+    <ul>
+      <li>签收起 12 个月主板质保。</li>
+      <li>质保覆盖主板出厂焊接、原生硬件故障。</li>
+      <li>不保：刃体耗材、摔落磕碰、进水、私自拆机、带电插拔烧毁、快充损坏电池。</li>
+      <li>售后流程：联系客服并提供故障视频，评估后返厂维修。</li>
+    </ul>
+
+    <h3>售后与退换</h3>
+    <p>售后与退换请见购买页面。</p>
+  </section>
+</div>
+
+<!-- 售后口径（2026-10-28 已定）：不写具体联系方式，统一指向购买页面。
+     以后若要换成客服邮箱 / 官网 / RMA 地址，改「售后与退换」小节和页脚这两处即可。 -->
+<footer class="footer">
+  Storm Handicrafts · NEON DAGGER<br>
+  XENO3.0 General Manual · Rev. 2026-10<br>
+  <span lang="zh-CN">售后与退换请见购买页面</span> · After-sales &amp; returns: see the purchase page
+  <!-- 预留：YouTube 视频 / 频道链接。填的时候 ① 改下面的 href；② 把锚文本换成短地址（如 youtube.com/@xxx），
+       这样打印出来也能直接敲；暂时不需要就删掉这一整行。 -->
+  <p class="yt-slot"><a href="https://youtu.be/UCsY1zszkNY?si=xthyp7lz_UANLfpy" rel="noopener" title="基础使用教程 / Basic tutorial (YouTube)">▶ 基础使用教程</a></p>
+</footer>
+
+<script>
+(function () {
+  var KEY = "storm-dagger-manual-lang";
+  var blocks = document.querySelectorAll("[data-lang-block]");
+  var buttons = document.querySelectorAll(".lang-btn");
+
+  function detect() {
+    var saved = null;
+    try { saved = window.localStorage.getItem(KEY); } catch (e) {}
+    if (saved === "en" || saved === "zh") return saved;
+    return (navigator.language || "en").toLowerCase().indexOf("zh") === 0 ? "zh" : "en";
+  }
+
+  function apply(lang, persist) {
+    if (lang !== "zh") lang = "en";
+    document.documentElement.lang = (lang === "zh") ? "zh-CN" : "en";
+    for (var i = 0; i < blocks.length; i++) {
+      blocks[i].classList.toggle("is-current", blocks[i].getAttribute("data-lang-block") === lang);
+    }
+    for (var j = 0; j < buttons.length; j++) {
+      var on = buttons[j].getAttribute("data-lang") === lang;
+      buttons[j].classList.toggle("active", on);
+      buttons[j].setAttribute("aria-pressed", on ? "true" : "false");
+    }
+    if (persist) {
+      try { window.localStorage.setItem(KEY, lang); } catch (e) {}
+    }
+  }
+
+  for (var k = 0; k < buttons.length; k++) {
+    buttons[k].addEventListener("click", function () {
+      apply(this.getAttribute("data-lang"), true);
+    });
+  }
+
+  apply(detect(), false);
+})();
+</script>
+
+
+
+
+
+
+</body></html>
